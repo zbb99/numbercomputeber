@@ -2,11 +2,20 @@
   "name": "numbercomputeber",
   "version": "1.0.4",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "scripts": {
+    "build": "node build/index.js"
+  },
+  "dependencies": {
+    "rollup": "^2.33.1"
+  },
   "devDependencies": {
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
     "webpack": "^5.3.2",
     "webpack-cli": "^4.1.0"
   },
